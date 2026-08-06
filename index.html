@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<!--
+	Academic Website for Dr. Yifei Qin
+	Built with Stellar by HTML5 UP (html5up.net)
+-->
+<html>
+	<head>
+		<title>Dr. Yifei Qin - Academic Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* ==========================================================================
+			   Dr. Yifei Qin - Custom Professional Academic Design System
+			   ========================================================================== */
+			
+			/* Global Section Refinements */
+			#main > section.main {
+				background-color: #ffffff !important;
+				color: #334155 !important;
+				padding: 3.5em 3em !important;
+				border-radius: 16px !important;
+				box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08) !important;
+				margin-bottom: 2.5em !important;
+			}
+			#main > section.main p, 
+			#main > section.main li {
+				color: #334155 !important;
+				line-height: 1.7 !important;
+			}
+			header.major h2 {
+				color: #0f172a !important;
+				font-weight: 600 !important;
+				letter-spacing: -0.02em !important;
+			}
+
+			/* Header & Shortened Slogan (Non-italicized) */
+			.header-headshot {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				object-fit: cover;
+				border: 4px solid #ffffff;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+				transition: transform 0.3s ease;
+			}
+			.header-headshot:hover {
+				transform: scale(1.05);
+			}
+			.header-slogan-box {
+				margin-top: 1em;
+				display: inline-block;
+			}
+			.header-slogan {
+				font-weight: 700 !important;
+				font-size: 1.15em !important;
+				white-space: nowrap !important;
+				font-style: normal !important; /* Not italicized */
+				color: #8cd6ff !important;
+				letter-spacing: 0.015em;
+				background: rgba(255, 255, 255, 0.08);
+				padding: 0.4em 1.2em;
+				border-radius: 30px;
+				border: 1px solid rgba(255, 255, 255, 0.18);
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			}
+			@media screen and (max-width: 980px) {
+				.header-slogan {
+					white-space: normal !important;
+					font-size: 1.05em !important;
+					display: block;
+				}
+			}
+
+			/* Introduction Spotlight */
+			.intro-img {
+				border-radius: 14px !important;
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+				max-width: 100% !important;
+				height: auto !important;
+				display: block !important;
+				border: 1px solid #e2e8f0;
+			}
+			.interest-box {
+				background: #f8fafc;
+				border: 1px solid #e2e8f0;
+				border-left: 4px solid #0f4c81;
+				border-radius: 8px;
+				padding: 1.2em 1.5em;
+				margin: 1.2em 0;
+			}
+			.interest-box ul {
+				margin: 0;
+				padding-left: 1.2em;
+			}
+			.interest-box li {
+				margin-bottom: 0.5em !important;
+			}
+
+			/* Education Section */
+			.education-container {
+				display: flex;
+				flex-direction: column;
+				gap: 1.5em;
+			}
+			.education-card {
+				background: #f8fafc !important;
+				border: 1px solid #e2e8f0 !important;
+				border-left: 5px solid #0f4c81 !important;
+				border-radius: 12px !important;
+				padding: 1.8em 2em !important;
+				text-align: left !important;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+			}
+			.education-card h3 {
+				color: #0f172a !important;
+				font-size: 1.3em !important;
+				font-weight: 600 !important;
+				margin-bottom: 0.4em !important;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 0.5em;
+			}
+			.education-meta {
+				font-size: 0.95em !important;
+				color: #475569 !important;
+				margin-bottom: 1em !important;
+			}
+			.badge-date {
+				background-color: #0f4c81 !important;
+				color: #ffffff !important;
+				font-size: 0.75em !important;
+				font-weight: 600 !important;
+				padding: 0.3em 0.9em !important;
+				border-radius: 20px !important;
+				letter-spacing: 0.02em;
+			}
+
+			/* Research directions: three independent, naturally sized columns */
+			#research ul.features {
+				width: 100% !important;
+				margin: 0 0 2em 0 !important;
+				display: grid !important;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 1.5em;
+				align-items: start;
+			}
+			#research ul.features > li {
+				min-width: 0;
+				width: auto !important;
+				margin: 0 !important;
+				padding: 2em 1.5em !important;
+				background: #f8fafc !important;
+				border: 1px solid #e2e8f0 !important;
+				border-radius: 12px !important;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+				box-sizing: border-box !important;
+				text-align: center !important;
+				transition: transform 0.2s ease, box-shadow 0.2s ease;
+			}
+			#research ul.features > li > .icon.major {
+				margin-bottom: 1.25em;
+				padding: 0.4em;
+			}
+			#research ul.features > li > .icon.major:before {
+				font-size: 3rem;
+			}
+			#research ul.features > li:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+			}
+			#research ul.features > li h3 {
+				color: #0f172a !important;
+				font-weight: 600 !important;
+				font-size: 1.15em !important;
+				margin-top: 0.8em;
+				margin-bottom: 0.6em;
+				text-align: center !important;
+			}
+			#research ul.features > li > p {
+				font-size: 0.92em;
+				color: #475569;
+				margin-bottom: 0.8em;
+				text-align: left !important;
+			}
+			#research .research-card-bullets {
+				text-align: left !important;
+				font-size: 0.88em !important;
+				margin: 0.8em 0 0 0 !important;
+				padding-left: 1.2em !important;
+				list-style-type: disc !important;
+				width: 100% !important;
+				box-sizing: border-box !important;
+			}
+			#research ul.features > li .research-card-bullets > li {
+				display: list-item !important;
+				width: auto !important;
+				margin-left: 0 !important;
+				margin-bottom: 0.6em !important;
+				padding: 0 !important;
+				background: transparent !important;
+				border: 0 !important;
+				border-radius: 0 !important;
+				box-shadow: none !important;
+				text-align: left !important;
+				transform: none !important;
+				line-height: 1.55 !important;
+				color: #334155 !important;
+			}
+			.cite-tag {
+				display: inline !important;
+				background: #e0f2fe;
+				color: #0369a1;
+				font-weight: 600;
+				font-size: 0.88em;
+				padding: 2px 6px;
+				border-radius: 4px;
+				font-style: normal;
+				white-space: nowrap;
+			}
+
+			@media screen and (max-width: 980px) {
+				#research ul.features {
+					grid-template-columns: repeat(2, minmax(0, 1fr));
+				}
+			}
+
+			@media screen and (max-width: 680px) {
+				#research ul.features {
+					grid-template-columns: 1fr;
+				}
+			}
+
+			/* Publications Section */
+			.pub-section-title {
+				font-size: 1.2em !important;
+				color: #0f172a !important;
+				font-weight: 600 !important;
+				border-bottom: 2px solid #e2e8f0;
+				padding-bottom: 0.4em;
+				margin-top: 1.8em !important;
+				margin-bottom: 1.2em !important;
+				text-align: left;
+			}
+			.publication-list {
+				text-align: left !important;
+				list-style-type: none !important;
+				padding-left: 0 !important;
+				margin: 0 !important;
+			}
+			.pub-item {
+				background: #f8fafc;
+				border: 1px solid #e2e8f0;
+				border-radius: 10px;
+				padding: 1.2em 1.5em 1.2em 4em;
+				margin-bottom: 1em;
+				position: relative;
+				transition: border-color 0.2s ease;
+			}
+			.pub-item:hover {
+				border-color: #cbd5e1;
+				background: #ffffff;
+			}
+			.pub-num {
+				position: absolute;
+				left: 1.2em;
+				top: 1.2em;
+				font-weight: 700;
+				font-size: 1.05em;
+				color: #0f4c81;
+			}
+			.author-self {
+				font-weight: 700 !important;
+				color: #ffffff !important;
+				background-color: #0f4c81 !important;
+				padding: 0.15em 0.5em !important;
+				border-radius: 4px !important;
+				display: inline-block;
+				font-size: 0.95em;
+			}
+			.badge-status {
+				display: inline-block;
+				padding: 0.2em 0.6em;
+				font-size: 0.8em;
+				font-weight: 600;
+				border-radius: 4px;
+				background-color: #fef3c7;
+				color: #92400e;
+				border: 1px solid #fde68a;
+				margin-left: 0.4em;
+			}
+			.doi-link {
+				display: inline-block;
+				background: #e2e8f0;
+				color: #0f4c81 !important;
+				font-size: 0.85em;
+				font-weight: 600;
+				padding: 0.15em 0.6em;
+				border-radius: 4px;
+				margin-left: 0.4em;
+				text-decoration: none !important;
+				border-bottom: none !important;
+			}
+			.doi-link:hover {
+				background: #cbd5e1;
+			}
+			.section-icon {
+				margin-right: 0.4em;
+				color: #0f4c81;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/Headshot.jpg" alt="Dr. Yifei Qin Headshot" class="header-headshot" /></span>
+						<h1>Yifei Qin</h1>
+						<p>Postdoctoral Research Fellow<br />
+						Institute of Urban Environment, Chinese Academy of Sciences (CAS)<br />
+						<span class="header-slogan-box"><span class="header-slogan">"Decoding environmental EVs across One Health ecosystems."</span></span></p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#research">Research</a></li>
+							<li><a href="#publications">Publications</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction Section -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major" style="text-align: left;">
+											<h2><span class="icon solid fa-user-graduate section-icon"></span>Introduction</h2>
+										</header>
+										<p>I am a Postdoctoral Fellow at the Institute of Urban Environment, Chinese Academy of Sciences (CAS), working under the supervision of <strong>Prof. Yong-Guan Zhu</strong> (Academician of CAS). My research focuses on environmental microbiology with a specialization in bacterial extracellular vesicles (EVs). </p>
+										
+										<div class="interest-box">
+											<p style="font-weight: 600; color: #0f172a; margin-bottom: 0.5em;">My research interests include:</p>
+											<ul>
+												<li><strong>1) Environmental AMR Reservoirs:</strong> Identifying environmental EVs as pervasive antimicrobial resistance (AMR) reservoirs across habitats.</li>
+												<li><strong>2) Stressor Decoding:</strong> Elucidating human-associated & anthropogenic stressors driving EV-mediated ARG transmission.</li>
+												<li><strong>3) Biological Risk Assessment:</strong> Revealing EVs' impact on host immune health and disease outcomes.</li>
+											</ul>
+										</div>
+
+									</div>
+									<span class="image"><img src="images/Headshot.jpg" alt="Dr. Yifei Qin" class="intro-img" /></span>
+								</div>
+							</section>
+
+						<!-- Education Section -->
+							<section id="education" class="main">
+								<header class="major" style="text-align: left;">
+									<h2><span class="icon solid fa-graduation-cap section-icon"></span>Education</h2>
+								</header>
+								<div class="education-container">
+									<div class="education-card">
+										<h3>
+											<span>Ph.D. in Environmental Science</span>
+											<span class="badge-date">July 2023</span>
+										</h3>
+										<div class="education-meta">
+											<strong>Institute of Urban Environment, University of Chinese Academy of Sciences (CAS)</strong> &bull; Xiamen, China
+										</div>
+										<ul class="alt" style="margin: 0; padding-left: 1.2em;">
+											<li><strong>Thesis:</strong> Raman spectroscopy combined with multiomics to reveal resistance risks and health effects of extracellular vesicles.</li>
+											<li><strong>Advisor:</strong> Prof. Li Cui</li>
+										</ul>
+									</div>
+
+									<div class="education-card">
+										<h3>
+											<span>B.Eng. in Environmental Engineering</span>
+											<span class="badge-date">July 2018</span>
+										</h3>
+										<div class="education-meta">
+											<strong>University of Jinan</strong> &bull; Jinan, China
+										</div>
+									</div>
+								</div>
+							</section>
+
+						<!-- Research Section -->
+							<section id="research" class="main special">
+								<header class="major">
+									<h2><span class="icon solid fa-flask section-icon"></span>Research Directions</h2>
+									<p>Investigating how bacterial extracellular vesicles shape antimicrobial resistance and health risks across interconnected environments.</p>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-bacteria"></span>
+										<h3>Environmental Reservoirs of Antimicrobial Resistance</h3>
+										<p>We investigate bacterial extracellular vesicles (EVs) as widespread vectors of antibiotic resistance genes (ARGs) across environmental interfaces.</p>
+										<ul class="research-card-bullets">
+											<li><strong>Selective enrichment:</strong> EVs carry a greater abundance of high-risk ARGs than their source environments (<span class="cite-tag">Environ. Sci. Technol. 2022</span>; <span class="cite-tag">J. Extracell. Vesicles 2022</span>).</li>
+											<li><strong>Plastisphere hotspots:</strong> Microplastics create interfaces that facilitate EV-mediated ARG transfer (<span class="cite-tag">One Earth 2026</span>).</li>
+										</ul>
+									</li>
+									<li>
+										<span class="icon solid major style3 fa-vial"></span>
+										<h3>Human Stressors and Resistance Transmission</h3>
+										<p>We examine how human-derived pollutants and other anthropogenic pressures alter EV-mediated antimicrobial resistance (AMR) transmission.</p>
+										<ul class="research-card-bullets">
+											<li><strong>Pollutant effects:</strong> Artificial sweetener mixtures increase ARG packaging into EVs and promote horizontal gene transfer (<span class="cite-tag">Environ. Sci. Ecotechnol. 2026</span>).</li>
+											<li><strong>One Health relevance:</strong> This work links human activity to the environmental spread of antimicrobial resistance.</li>
+										</ul>
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-shield-alt"></span>
+										<h3>Host Responses and Diagnostic Tools</h3>
+										<p>We combine mechanistic studies with single-cell analysis to define how environmental EVs affect host immunity and to improve their detection.</p>
+										<ul class="research-card-bullets">
+											<li><strong>Immune reprogramming:</strong> Airborne EVs induce metabolic reprogramming in macrophages (<span class="cite-tag">Environ. Sci. Technol. 2023</span>).</li>
+											<li><strong>Raman-based diagnostics:</strong> Label-free Raman spectroscopy and deep learning enable rapid identification of EVs at single-cell resolution (<span class="cite-tag">Anal. Chem. 2022</span>).</li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Publications Section -->
+							<section id="publications" class="main">
+								<header class="major" style="text-align: left;">
+									<h2><span class="icon solid fa-book-open section-icon"></span>Publications</h2>
+								</header>
+								
+								<div class="pub-section-title">Peer-Reviewed Journal Articles</div>
+								<ul class="publication-list">
+									<li class="pub-item">
+										<span class="pub-num">[12]</span>
+										Yu-Qiu Ye, Luo-Qin Shen, Da Lin, Tian-Lun Zhang, Ya-Ning Wang, Lu Lu*, <span class="author-self">Yi-Fei Qin*</span>, Dong Zhu. Plastic-mediated alterations in soil microbial networks and their role in sulfamethazine degradation. <em>Journal of Environmental Sciences</em>, 2026, 167, 697–707. <a href="https://doi.org/10.1016/j.jes.2025.12.041" target="_blank" rel="noopener" class="doi-link">doi:10.1016/j.jes.2025.12.041</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[11]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Ricardo David Avellán-Llaguno, Da Lin, Xue-Li Xu, Lu Wang, Qian-Sheng Huang, Ying Liu, Xin Shan, Xiao-Hui Liu, Patrick O'Connor, Yong-Guan Zhu, Dong Zhu. Extracellular vesicles in the plastisphere emerge as hotspots to spread antibiotic resistance and virulence genes. <em>One Earth</em>, 2026, 9(5), 101687. <a href="https://doi.org/10.1016/j.oneear.2026.101687" target="_blank" rel="noopener" class="doi-link">doi:10.1016/j.oneear.2026.101687</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[10]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Jin-You Pang, Yang Li, Fang-Yu Liu, Luo-Qin Shen, Hong-Zhe Li, Qian-Sheng Huang, Zhu-Gen Yang, Dong Zhu. Tire wear particle microbiome-derived extracellular vesicles function as potent vectors amplifying antimicrobial resistance risk in soil ecosystems. <em>Environmental Science & Technology Letters</em>, 2026, 13(5), 684–690. <a href="https://doi.org/10.1021/acs.estlett.6c00328" target="_blank" rel="noopener" class="doi-link">doi:10.1021/acs.estlett.6c00328</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[9]</span>
+										<span class="author-self">Yi-Fei Qin#</span>, Wan-Rong Zhang#, Lu Wang, Yi-Fei Wang, Da Lin, Tian-Gui Cai, Hong-Zhe Li, Qian-Sheng Huang, Matthias C. Rillig, Dong Zhu. Extracellular vesicles drive stress-induced antibiotic resistance spread in soil. <em>Environmental Science & Ecotechnology</em>, 2026, 30, 100681. <a href="https://doi.org/10.1016/j.ese.2026.100681" target="_blank" rel="noopener" class="doi-link">doi:10.1016/j.ese.2026.100681</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[8]</span>
+										Xin-Yu Lu, Chen-Yue Wang, Hui Tang, <span class="author-self">Yi-Fei Qin</span>, Li Cui, Xiang Wang, Guo-Kun Liu, Bin Ren. Patch-Based Convolutional Encoder: A Deep Learning Algorithm for Spectral Classification Balancing the Local and Global Information. <em>Analytical Chemistry</em>, 2024, 96(7), 2866–2873. <a href="https://doi.org/10.1021/acs.analchem.3c03889" target="_blank" rel="noopener" class="doi-link">doi:10.1021/acs.analchem.3c03889</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[7]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Zheng Shi, Long-Ji Zhu, Hong-Zhe Li, Wen-Jia Lu, Guo-Zhu Ye, Qian-Sheng Huang, Li Cui. Impact of Airborne Pathogen-Derived Extracellular Vesicles on Macrophages Revealed by Raman Spectroscopy and Multiomics. <em>Environmental Science & Technology</em>, 2023, 57(42), 15858–15868. <a href="https://doi.org/10.1021/acs.est.3c04800" target="_blank" rel="noopener" class="doi-link">doi:10.1021/acs.est.3c04800</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[6]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Xin-Yu Lu, Zheng Shi, Qian-Sheng Huang, Xiang Wang, Bin Ren, Li Cui. Deep Learning-Enabled Raman Spectroscopic Identification of Pathogen-Derived Extracellular Vesicles and the Biogenesis Process. <em>Analytical Chemistry</em>, 2022, 94(36), 12416–12426. <a href="https://doi.org/10.1021/acs.analchem.2c02226" target="_blank" rel="noopener" class="doi-link">doi:10.1021/acs.analchem.2c02226</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[5]</span>
+										Li-Ting Zhu, Hai-Ning Huang, Ricardo David Avellán-Llaguno, <span class="author-self">Yi-Fei Qin</span>, Xin-Li An, Jian-Qiang Su, Qian-Sheng Huang, Yong-Guan Zhu. Diverse functional genes harboured in extracellular vesicles from environmental and human microbiota. <em>Journal of Extracellular Vesicles</em>, 2022, 11(12), e12292. <a href="https://doi.org/10.1002/jev2.12292" target="_blank" rel="noopener" class="doi-link">doi:10.1002/jev2.12292</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[4]</span>
+										Hong-Zhe Li, Dong Zhu, An-Qi Sun, <span class="author-self">Yi-Fei Qin</span>, Jonathan Hessner Lindhardt, Li Cui. Effects of soil protists on the antibiotic resistome under long-term fertilization. <em>Environmental Pollution</em>, 2022, 307, 119516. <a href="https://doi.org/10.1016/j.envpol.2022.119516" target="_blank" rel="noopener" class="doi-link">doi:10.1016/j.envpol.2022.119516</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[3]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Zi-Han Guo, Hai-Ning Huang, Li-Ting Zhu, Si-Jun Dong, Yong-Guan Zhu, Li Cui, and Qian-Sheng Huang. Widespread of Potential Pathogen-Derived Extracellular Vesicles Carrying Antibiotic Resistance Genes in Indoor Dust. <em>Environmental Science & Technology</em>, 2022, 56(9), 5653–5663. <a href="https://doi.org/10.1021/acs.est.1c08654" target="_blank" rel="noopener" class="doi-link">doi:10.1021/acs.est.1c08654</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[2]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Jing Zhang, Ricardo David Avellán-Llaguno, Xu Zhang, Qian-Sheng Huang. DEHP-elicited small extracellular vesicles miR-26a-5p promoted metastasis in nearby normal A549 cells. <em>Environmental Pollution</em>, 2021, 272, 116005. <a href="https://doi.org/10.1016/j.envpol.2020.116005" target="_blank" rel="noopener" class="doi-link">doi:10.1016/j.envpol.2020.116005</a>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[1]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Li Long, Qian-Sheng Huang. Extracellular vesicles in toxicological studies: key roles in communication between environmental stress and adverse outcomes. <em>Journal of Applied Toxicology</em>, 2020, 40(9), 1166–1182. <a href="https://doi.org/10.1002/jat.3963" target="_blank" rel="noopener" class="doi-link">doi:10.1002/jat.3963</a>
+									</li>
+								</ul>
+
+								<div class="pub-section-title">Manuscripts in Preparation</div>
+								<ul class="publication-list">
+									<li class="pub-item">
+										<span class="pub-num">[2]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Xue-Peng Chen, Da Lin, Kai Yang, Hong-Zhe Li, Wan-Rong Zhang, Tian-Lun Zhang, Qian-Sheng Huang, Fang-Yu Liu, Matthias C. Rillig, Xiao-hui Liu, Dong Zhu. The wide prevalence of extracellular vesicles in tire wear particles exhibits dynamically regulatory roles in microbial adaptation. <span class="badge-status">In preparation</span>
+									</li>
+									<li class="pub-item">
+										<span class="pub-num">[1]</span>
+										<span class="author-self">Yi-Fei Qin</span>, Da Lin, Xue-Peng Chen, Hong-Zhe Li, Qian-sheng Huang, Yong-Guan Zhu, Dong Zhu. Extracellular vesicles from sensitive bacteria enhance microbial community resilience under long-term drought. <span class="badge-status">In preparation</span>
+									</li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Dr. Yifei Qin</h2>
+							<p>Postdoctoral Research Fellow focusing on bacterial extracellular vesicles (EVs), antibiotic resistance gene (ARG) dissemination, and One Health risk management.</p>
+							<p><strong>Affiliation:</strong><br />
+							Institute of Urban Environment, Chinese Academy of Sciences (CAS)<br />
+							Xiamen, China</p>
+						</section>
+						<section>
+							<h2>Contact & Profiles</h2>
+							<dl class="alt">
+								<dt>Institution</dt>
+								<dd>Chinese Academy of Sciences (CAS)</dd>
+								<dt>Location</dt>
+								<dd>Xiamen, Fujian, China</dd>
+								<dt>Email</dt>
+								<dd><a href="mailto:yfqin@iue.ac.cn">yfqin@iue.ac.cn</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="https://scholar.google.com/citations?user=o-7BJ2MAAAAJ&hl=en" target="_blank" rel="noopener" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin-in alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:yfqin@iue.ac.cn" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Yifei Qin. All rights reserved.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
